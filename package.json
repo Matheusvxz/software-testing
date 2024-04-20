@@ -1,0 +1,22 @@
+{
+  "name": "software-testing",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/Matheusvxz/software-testing",
+  "author": "Matheusvxz <98288544+Matheusvxz@users.noreply.github.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "@jest/globals": "^29.7.0",
+    "@stryker-mutator/core": "^8.2.6",
+    "@stryker-mutator/jest-runner": "^8.2.6",
+    "jest": "^29.7.0",
+    "ts-jest": "^29.1.2",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.4.5"
+  },
+  "scripts": {
+    "test": "jest",
+    "test:mutation": "stryker run"
+  },
+  "dependencies": {}
+}
