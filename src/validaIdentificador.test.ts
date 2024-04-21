@@ -14,6 +14,10 @@ describe("isLetter", () => {
         expect(isLetter("A")).toBe(true);
     });
 
+    test("Should return true when character is letter", () => {
+        expect(isLetter("t")).toBe(true);
+    });
+
     test("Should return true when character is letter Z", () => {
         expect(isLetter("Z")).toBe(true);
     });

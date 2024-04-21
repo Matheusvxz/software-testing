@@ -10,7 +10,7 @@ function isNumber(c:string):boolean {
 
 function validaIdentificador(identificador:string | null):boolean {
 
-    if(!identificador) {
+    if(identificador === null || identificador === "") {
         return false;
     }
 
@@ -18,8 +18,7 @@ function validaIdentificador(identificador:string | null):boolean {
         return false;
     }
 
-    const firstCharCode = identificador.charAt(0);
-    if(!isLetter(firstCharCode)) {
+    if(!isLetter(identificador)) {
         return false;
     }
 
